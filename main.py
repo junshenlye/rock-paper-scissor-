@@ -16,7 +16,7 @@ def check_winners(player, computer):
       print("You lost! {} beats {}.".format(computer, player))
 
 while True:
-  player_choice = str(input("Choose Rock, Paper or Scissor!")).lower()
+  player_choice = str(input("Choose Rock, Paper or Scissor:")).lower()
   if player_choice in options:
     computer_choice = random.choice(options)
     check_winners(player_choice, computer_choice)
